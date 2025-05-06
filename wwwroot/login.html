@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Sign Up/ Login</title>
+  </head>
+  <body>
+    <section class="container" id="container">
+      <article class="form-container sign-up">
+        <form id="signup-form">
+          <h1>Create account</h1>
+          <span>or use your email for registration</span>
+          <input type="text" id="name" placeholder="Name" required/>
+          <input type="email" id="email" placeholder="Email" required/>
+          <input type="password" id="password" placeholder="Password" required/>
+          <button type="submit">Sign up</button>
+        </form>
+      </article>
+      <section class="form-container sign-in">
+        <form id="login-form">
+          <a href="./index.html" class="container-button-left">← Back to Home</a>
+          <h1>Sign in</h1>
+          <span>or use your email password</span>
+          <input type="email" id="login-email" placeholder="Email" required/>
+          <input type="password" id="login-password" placeholder="Password" required/>
+          <a href="#">Forget your password</a>
+          <button type="submit">Sign in</button>
+        </form>
+      </section>
+      <section class="toggle-container">
+        <article class="toggle">
+          <div class="toggle-panel toggle-left">
+            <a href="./index.html" class="container-button">← Back to Home</a>
+            <h1>Welcome Back!</h1>
+            <p>Enter your personal details to use all of site features</p>
+            <button class="hidden" id="login">Sign in</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            
+            <h1>Hello, Friend</h1>
+            <p>Register with your personal details to use all of site features</p>
+            <button class="hidden" id="register">Sign up</button>
+          </div>
+        </article>
+      </section>
+    </section>
+    <script src="./login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HOTEL GP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+  </head>
+  <body>
+
+    <header class="header" id="header">
+      <div class="head-top">
+        <div class="site-name">
+          <a href="#" class="logo">Summer Cottages</a>
+        </div>
+        <div>
+          <span class="nav-item" data-page="CV.html">About us</span>
+          <span class="nav-item" data-page="Photos.html">Photos</span>
+          <span class="nav-item" data-page="Contact.html">Contact</span>
+        </div>
+        <div class="site-nav">
+          <span id="nav-btn">About this page <i class="fas fa-bars"></i></span>
+        </div>
+      </div>
+
+      <div class="head-bottom flex">
+        <h2>WELCOME TO SUMMER COTTAGES</h2>
+        <p>Your perfect getaway in nature, by lake, or the mountain.</p>
+        <button type="button" class="head-btn">GET STARTED</button>
+      </div>
+    </header>
+
+    <div class="sidenav" id="sidenav">
+      <span class="cancel-btn" id="cancel-btn">
+        <i class="fas fa-times"></i>
+      </span>
+
+      <ul class="navbar">
+        <li><a href="#header">home</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#rooms">rooms</a></li>
+        <li><a href="#customers">customers</a></li>
+      </ul>
+      <button class="btn sign-up" onclick="window.location.href='login.html'">sign up</button>
+      <button class="btn log-in" onclick="window.location.href='login.html'">log in</button>
+    </div>
+
+    <div id="modal"></div>
+
+
+
+          <div class="education-container">
+    
+            <div class="small-container">
+              <img src="./assets/2024.jpg" alt="Your Image" />
+              <h3>Europe</h3>
+              <div class="extra-text">
+                <p>
+                  Traveling to Europe is a fantastic experience, offering a blend of
+                  rich history, diverse cultures, world-renowned art, stunning
+                  architecture, and picturesque landscapes, making it an ideal
+                  destination for those seeking both relaxation and adventure.
+                </p>
+              </div>
+            </div>
+            <div class="small-container">
+              <img src="./assets/2024.jpg" alt="Your Image" />
+              <h3>North America</h3>
+           
+              <div class="extra-text">
+                <p>
+                  Traveling to North America is an exciting adventure, offering a wide
+                  range of experiences from the natural beauty of national parks to
+                  the vibrant cities, diverse cultures, and rich history, making it a
+                  perfect destination for every type of traveler.
+                </p>
+              </div>
+            </div>
+            <div class="small-container">
+              <img src="./assets/2024.jpg" alt="Your Image" />
+              <h3>Asia</br>
+                The Art of User Experience</h3>
+             
+              <div class="extra-text">
+                <p>
+                  Traveling to Asia is a fantastic opportunity to immerse yourself in
+                  diverse cultures, ancient traditions, breathtaking landscapes, and
+                  mouthwatering cuisines, all while exploring everything from bustling
+                  cities to serene temples and vibrant nature.
+                </p>
+              </div>
+            </div>
+            <div class="small-container">
+              <img src="./assets/2024.jpg" alt="Your Image" />
+              <h3>South America</h3>
+              
+              <div class="extra-text">
+                <p>
+                  Traveling to South America is a must to explore its vibrant
+                  cultures, stunning natural landscapes, rich history, and incredible
+                  biodiversity, offering unforgettable experiences from the Amazon
+                  rainforest to the Andes mountains.
+                </p>
+              </div>
+            </div>
+            <div class="small-container">
+              <img src="./assets/2024.jpg" alt="Your Image" />
+              <h3>Africa</h3>
+             
+              <div class="extra-text">
+                <p>
+                  Traveling to Africa is worth it to experience the unique combination
+            of wildlife, stunning landscapes, cultural diversity, and adventures
+            that cannot be found anywhere else in the world.
+                </p>
+              </div>
+            </div>
+          </div>
+    
+    <section class="services sec-width" id="services">
+      <div class="title">
+        <h2>Our Services</h2>
+      </div>
+      <div class="services-container">
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-utensils"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Home-cooked Meals</h2>
+            <p>
+              Enjoy freshly prepared meals from local ingredients, delivered
+              right to your cottage.
+            </p>
+            <button type="button" class="btn">Learn More</button>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-swimming-pool"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Swimming & Relaxation</h2>
+            <p>
+              Take a dip in our outdoor pool or relax by the lake to enjoy the
+              serene atmosphere.
+            </p>
+            <button type="button" class="btn">Learn More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-broom"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Cleaning & Housekeeping</h2>
+            <p>
+              We provide daily housekeeping services to ensure you have a
+              hassle-free stay.
+            </p>
+            <button type="button" class="btn">Learn More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-door-closed"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Safe & Secure Rooms</h2>
+            <p>
+              Our rooms are equipped with secure locks and safety features for
+              your peace of mind.
+            </p>
+            <button type="button" class="btn">Learn More</button>
+          </div>
+        </article>
+        <!-- end of single service -->
+      </div>
+    </section>
+
+    <div class="book">
+      <form class="book-form">
+        <div class="form-item">
+          <label for="checkin-date">Check In Date: </label>
+          <input type="date" id="checkin-date" />
+        </div>
+        <div class="form-item">
+          <label for="checkout-date">Check Out Date: </label>
+          <input type="date" id="checkout-date" />
+        </div>
+        <div class="form-item">
+          <label for="adult">Adults: </label>
+          <input type="number" min="1" value="1" id="adult" />
+        </div>
+        <div class="form-item">
+          <label for="children">Children: </label>
+          <input type="number" min="1" value="1" id="children" />
+        </div>
+        <div class="form-item">
+          <label for="rooms">Rooms: </label>
+          <input type="number" min="1" value="1" id="rooms" />
+        </div>
+        <div class="form-item">
+          <input type="submit" class="btn" value="Book Now" />
+        </div>
+      </form>
+    </div>
+
+    <section class="rooms sec-width" id="rooms">
+      <div class="title">
+        <h2>Our Rooms</h2>
+      </div>
+      <div class="rooms-container">
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img
+              src="./assets/2024.jpg"
+              alt="room image"
+            />
+          </div>
+          <div class="room-text">
+            <h3>Cozy Lakeside Cottage</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Peaceful lakeside views
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Spacious outdoor deck
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Fireplace for cozy nights
+              </li>
+            </ul>
+            <p>
+              Our cozy lakeside cottage is perfect for a peaceful retreat,
+              offering a beautiful view of the water and a relaxing atmosphere.
+            </p>
+            <p>
+              Enjoy the comforts of home with a full kitchen and ample living
+              space for your family or friends.
+            </p>
+            <p class="rate"><span>$150.00 /</span> Per Night</p>
+            <button type="button" class="btn">Book Now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img
+              src="./assets/2024.jpg"
+              alt="room image"
+            />
+          </div>
+          <div class="room-text">
+            <h3>Mountain View Cottage</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Scenic mountain views
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Large windows for natural light
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Modern amenities for a comfortable stay
+              </li>
+            </ul>
+            <p>
+              This spacious mountain view cottage offers breathtaking views and
+              a serene setting, perfect for nature lovers and adventurers alike.
+            </p>
+            <p>
+              Equipped with modern amenities and an open living area, it
+              provides a cozy yet luxurious retreat in the heart of nature.
+            </p>
+            <p class="rate"><span>$180.00 /</span> Per Night</p>
+            <button type="button" class="btn">Book Now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+        <!-- single room -->
+        <article class="room">
+          <div class="room-image">
+            <img
+              src="./assets/2024.jpg"
+              alt="room image"
+            />
+          </div>
+          <div class="room-text">
+            <h3>Secluded Forest Cabin</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Peaceful and private location
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Fully equipped kitchen
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Perfect for nature lovers
+              </li>
+            </ul>
+            <p>
+              Our secluded forest cabin is ideal for those seeking peace and
+              privacy, surrounded by the sounds of nature and tall trees.
+            </p>
+            <p>
+              With a fully equipped kitchen, cozy living spaces, and stunning
+              views, it's the perfect home away from home.
+            </p>
+            <p class="rate"><span>$200.00 /</span> Per Night</p>
+            <button type="button" class="btn">Book Now</button>
+          </div>
+        </article>
+        <!-- end of single room -->
+      </div>
+    </section>
+
+    <section class="customers" id="customers">
+      <div class="sec-width">
+        <div class="title">
+          <h2>Guest Reviews</h2>
+        </div>
+        <div class="customers-container">
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>Peaceful and Beautiful</h3>
+            <p>
+              We had such a relaxing time at the lakeside cottage. The view was
+              incredible, and the cottage was so cozy. Highly recommended!
+            </p>
+            <img
+              src="./assets/2024.jpg"
+              alt="customer image"
+            />
+          </div>
+          <!-- end of single customer -->
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>Perfect Getaway</h3>
+            <p>
+              The mountain cabin was the perfect escape from the hustle and
+              bustle of the city. Beautiful views and so peaceful.
+            </p>
+            <img
+              src="./assets/2024.jpg"
+              alt="customer image"
+            />
+          </div>
+          <!-- end of single customer -->
+          <!-- single customer -->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>Wonderful Stay</h3>
+            <p>
+              The forest cabin was the perfect retreat. We enjoyed the peace and
+              quiet and the nature surrounding us. We’ll be back!
+            </p>
+            <img
+              src="./assets/2024.jpg"
+              alt="customer image"
+            />
+          </div>
+          <!-- end of single customer -->
+        </div>
+      </div>
+    </section>
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <h2>About Us</h2>
+          <p>
+            We are dedicated to providing a peaceful and relaxing experience in
+            the heart of nature, offering comfortable accommodations and
+            beautiful surroundings.
+          </p>
+          <ul class="social-icons">
+            <li class="flex">
+              <i class="fa fa-twitter fa-2x"></i>
+            </li>
+            <li class="flex">
+              <i class="fa fa-facebook fa-2x"></i>
+            </li>
+            <li class="flex">
+              <i class="fa fa-instagram fa-2x"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Useful Links</h2>
+          <a href="#">Blog</a>
+          <a href="#">Rooms</a>
+          <a href="#">Subscription</a>
+          <a href="#">Gift Cards</a>
+        </div>
+
+        <div>
+          <h2>Privacy</h2>
+          <a href="#">Careers</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Services</a>
+        </div>
+
+        <div>
+          <h2>FAQ</h2>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <span>Rautatieläisenkatu 5, 00520 Helsinki</span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span>+358914890200</span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span>info@summercottages.com</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
