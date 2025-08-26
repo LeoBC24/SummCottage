@@ -36,24 +36,33 @@ namespace LoginBackend.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] User loginData)
+public async Task<IActionResult> Login([FromBody] User loginData)
+{
+    if (loginData == null ||
+        string.IsNullOrEmpty(loginData.Email) ||
+        string.IsNullOrEmpty(loginData.Password))
+    {
+        return BadRequest(new { message = "Email and password are required" });
+    }
+
+    var user = await _userService.GetByEmailAsync(loginData.Email);
+
+    if (user == null || user.Password != loginData.Password)
+    {
+        return Unauthorized(new { message = "Invalid credentials" });
+    }
+
+    return Ok(new
+    {
+        message = "Login successful",
+        user = new
         {
-            if (loginData == null ||
-                string.IsNullOrEmpty(loginData.Email) ||
-                string.IsNullOrEmpty(loginData.Password))
-            {
-                return BadRequest(new { message = "Email and password are required" });
-            }
-
-            var user = await _userService.GetByEmailAsync(loginData.Email);
-
-            if (user == null || user.Password != loginData.Password)
-            {
-                return Unauthorized(new { message = "Invalid credentials" });
-            }
-
-            return Ok(new { message = "Login successful" });
+            name = user.Name,
+            email = user.Email
         }
+    });
+}
+
     }
 }
 

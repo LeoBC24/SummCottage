@@ -31,11 +31,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapGet("/login", context =>
+/*app.MapGet("/login", context =>
 {
     context.Response.ContentType = "text/html";
     return context.Response.SendFileAsync("wwwroot/login.html");
 });
-
+*/
 
 app.Run();
