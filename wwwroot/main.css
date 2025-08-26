@@ -60,7 +60,7 @@ img {
 /* header */
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.05)),
-    url("./assets/2024.jpg") center/cover
+    url("./picture/WhatsApp\ Image\ 2025-04-01\ at\ 10.31.13.jpeg") center/cover
       no-repeat;
   min-height: 100vh;
   color: #fff;
@@ -69,7 +69,7 @@ img {
   flex-direction: column;
   align-content: stretch;
 }
-
+/* Логотип 32px, без жирности */
 .logo {
   font-family: "Abril Fatface", serif;
   font-size: 32px;
@@ -94,9 +94,12 @@ img {
 .head-top span:hover {
   color: var(--yellow);
 }
+
 .nav-item {
   margin-right: 20px;
   cursor: pointer;
+  color: white; /* Делает текст белым */
+  text-decoration: none; /* Убирает подчёркивание */
 }
 
 .head-bottom {
@@ -196,22 +199,22 @@ img {
 
 /* Фоновые изображения для разных контейнеров */
 .small-container:nth-child(1) {
-  background: url("assets/2024.jpg") center/cover no-repeat;
+  background: url("./country/1.jpeg") center/cover no-repeat;
 }
 .small-container:nth-child(2) {
-  background: url("assets/2024.jpg") center/cover no-repeat;
+  background: url("./country/2.jpeg") center/cover no-repeat;
 }
 .small-container:nth-child(3) {
-  background: url("assets/2024.jpg") center/cover no-repeat;
+  background: url("./country/3.jpeg") center/cover no-repeat;
 }
 .small-container:nth-child(4) {
-  background: url("assets/2024.jpg") center/cover no-repeat;
+  background: url("./country/4.jpeg") center/cover no-repeat;
 }
 .small-container:nth-child(5) {
-  background: url("assets/2024.jpg") center/cover no-repeat;
+  background: url("./country/5.jpeg") center/cover no-repeat;
 }
 
-
+/* Обычный текст внутри контейнера */
 .small-container p {
   font-size: 10px;
   line-height: 2;
@@ -223,7 +226,7 @@ img {
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
 
-
+/* Эффект увеличения при наведении */
 .small-container:hover {
   transform: scale(2);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
@@ -374,7 +377,7 @@ img {
 /* booking form */
 .book {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url("assets/2024.jpg") center/cover
+    url("./picture/WhatsApp\ Image\ 2025-04-01\ at\ 10.31.13.jpeg") center/cover
       no-repeat;
   color: #fff;
   padding: 40px 60px;
@@ -524,7 +527,7 @@ img {
   margin-top: 40px;
   padding: 40px 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/2024.jpg") center/cover
+    url("./picture/WhatsApp\ Image\ 2025-04-01\ at\ 10.31.13.jpeg") center/cover
       no-repeat fixed;
 }
 .customer {

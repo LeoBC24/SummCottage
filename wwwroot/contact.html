@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HOTEL GP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./about.css" />
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="head-top">
+        <div class="site-name">
+          <a href="./index.html" class="logo">Summer Cottages</a>
+        </div>
+        <div>
+          <a href="./about.html" class="nav-item">About us</a>
+          <a href="./contact.html" class="nav-item">Contact</a>
+        </div>
+        <div class="site-nav">
+          <span id="nav-btn">Sign up <i class="fas fa-bars"></i></span>
+        </div>
+      </div>
+
+      <div class="head-bottom flex">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <label for="name">Nimi:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Sähköposti:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Palautetta:</label><br />
+          <textarea id="message" name="message" rows="4" required></textarea
+          ><br /><br />
+
+          <button type="submit" id="submitBtn">Send</button>
+        </form>
+
+        <p id="confirmationMessage" style="display: none; color: green">
+          Message sent!
+        </p>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+      <span class="cancel-btn" id="cancel-btn">
+        <i class="fas fa-times"></i>
+      </span>
+
+      <ul class="navbar">
+        <li><a href="#header">home</a></li>
+      </ul>
+      <button class="btn sign-up" onclick="window.location.href='login.html'">sign up</button>
+      <button class="btn log-in" onclick="window.location.href='login.html'">log in</button>
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <h2>About Us</h2>
+          <p>
+            We are dedicated to providing a peaceful and relaxing experience in
+            the heart of nature.
+          </p>
+          <ul class="social-icons">
+            <li class="flex"><i class="fa fa-twitter fa-2x"></i></li>
+            <li class="flex"><i class="fa fa-facebook fa-2x"></i></li>
+            <li class="flex"><i class="fa fa-instagram fa-2x"></i></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Useful Links</h2>
+          <a href="#">Blog</a>
+          <a href="#">Rooms</a>
+          <a href="#">Subscription</a>
+          <a href="#">Gift Cards</a>
+        </div>
+
+        <div>
+          <h2>Privacy</h2>
+          <a href="#">Careers</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Services</a>
+        </div>
+
+        <div>
+          <h2>Have A Question?</h2>
+          <div class="contact-item">
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            <span>Rautatieläisenkatu 5, 00520 Helsinki</span>
+          </div>
+          <div class="contact-item">
+            <span><i class="fas fa-phone-alt"></i></span>
+            <span>+358914890200</span>
+          </div>
+          <div class="contact-item">
+            <span><i class="fas fa-envelope"></i></span>
+            <span>info@summercottages.com</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Подключаем внешний JS -->
+    <script src="./contact.js"></script>
+  </body>
+</html>

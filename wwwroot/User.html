@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account</title>
+  <link rel="stylesheet" href="./User.css" />
+</head>
+<body>
+  <div class="container" style="visibility: hidden;">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 id="user-name">User Name</h2>
+      <div class="info-item"><strong>Email:</strong><br><span id="user-email">email@example.com</span></div>
+      <div class="info-item"><strong>Phone:</strong><br> +358 40 123 4567</div>
+      <div class="info-item"><strong>Member Since:</strong><br> March 2023</div>
+      <div class="sidebar-buttons">
+        <button>Edit Profile</button>
+        <button>New Reservation</button>
+        <button onclick="logout()">Log Out</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h2>Available & Reserved Cottages</h2>
+
+      <div class="cottages-grid">
+        <!-- Cottage 1 -->
+        <div class="cottage-card available">
+          <img src="./assets/461884106.jpg" alt="Lakeview Cabin" />
+          <div class="cottage-info">
+            <h3>Lakeview Cabin</h3>
+            <p class="status">Status: <span class="green">Available</span></p>
+            <p class="dates">May 10 - May 14</p>
+            <p class="location">Location: Espoo</p>
+            <p class="stars">★★★★★</p>
+            <form class="reservation-form" onsubmit="return reserveCottage(event, 'Lakeview Cabin')">
+              <label>Start:</label>
+              <input type="date" name="start" required />
+              <label>End:</label>
+              <input type="date" name="end" required />
+              <button type="submit">Reserve</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Cottage 2 -->
+        <div class="cottage-card reserved">
+          <img src="./assets/forest.jpg" alt="Forest Retreat" />
+          <div class="cottage-info">
+            <h3>Forest Retreat</h3>
+            <p class="status">Status: <span class="red">Reserved</span></p>
+            <p class="dates">April 25 - April 30</p>
+            <p class="location">Location: Tampere</p>
+            <p class="stars">★★★★☆</p>
+          </div>
+        </div>
+
+        <!-- Cottage 3 -->
+        <div class="cottage-card available">
+          <img src="./assets/hilltop.jpeg" alt="Hilltop Hideaway" />
+          <div class="cottage-info">
+            <h3>Hilltop Hideaway</h3>
+            <p class="status">Status: <span class="green">Available</span></p>
+            <p class="dates">May 18 - May 21</p>
+            <p class="location">Location: Jyväskylä</p>
+            <p class="stars">★★★★★</p>
+            <form class="reservation-form" onsubmit="return reserveCottage(event, 'Hilltop Hideaway')">
+              <label>Start:</label>
+              <input type="date" name="start" required />
+              <label>End:</label>
+              <input type="date" name="end" required />
+              <button type="submit">Reserve</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Cottage 4 -->
+        <div class="cottage-card reserved">
+          <img src="./assets/sauna.jpg" alt="Sauna Sanctuary" />
+          <div class="cottage-info">
+            <h3>Sauna Sanctuary</h3>
+            <p class="status">Status: <span class="red">Reserved</span></p>
+            <p class="dates">April 12 - April 16</p>
+            <p class="location">Location: Kuopio</p>
+            <p class="stars">★★★☆☆</p>
+          </div>
+        </div>
+
+        <!-- Cottage 5 -->
+        <div class="cottage-card available">
+          <img src="./assets/river.jpeg" alt="River Nest" />
+          <div class="cottage-info">
+            <h3>River Nest</h3>
+            <p class="status">Status: <span class="green">Available</span></p>
+            <p class="dates">June 1 - June 4</p>
+            <p class="location">Location: Lahti</p>
+            <p class="stars">★★★★☆</p>
+            <form class="reservation-form" onsubmit="return reserveCottage(event, 'River Nest')">
+              <label>Start:</label>
+              <input type="date" name="start" required />
+              <label>End:</label>
+              <input type="date" name="end" required />
+              <button type="submit">Reserve</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="./User.js"></script>
+</body>
+</html>

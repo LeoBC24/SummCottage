@@ -55,13 +55,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const data = await res.json();
 
-      if (res.ok) {
-        alert(data.message);
+      // Debugging logs
+      console.log("Login response status: ", res.status);
+      console.log("Login response data: ", data);
+
+      if (res.ok && data.user) {
+        localStorage.setItem('userData', JSON.stringify({
+          name: data.user.name,
+          email: data.user.email
+        }));
+      
+        alert(data.message || 'Login successful!');
         loginForm.reset();
-        // Optionally redirect or show a logged-in UI
+        window.location.href = 'User.html';
       } else {
-        alert(data.message);
+        alert(data.message || 'Login failed.');
       }
+      
     } catch (err) {
       alert('An error occurred');
       console.error(err);
